@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/aryanm12/TravelMemory/',
-                git branch: 'main'
+                git branch: 'main', url: 'https://github.com/UnpredictablePrashant/TravelMemory.git'
             }
         }
         stage('Install') {
@@ -22,3 +21,4 @@ pipeline {
     }
 
 }
+
